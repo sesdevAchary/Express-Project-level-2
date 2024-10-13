@@ -1,0 +1,3 @@
+-> created a server file using npm init -y and installed express
+-> To intigrate a db , created a config and db.js file , instlled mongoose "npm install mongoose"
+-> Created a Bookmodel file for schema 
