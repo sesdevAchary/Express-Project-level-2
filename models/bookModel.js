@@ -19,3 +19,18 @@ const  bookSchema = new mongoose.Schema({
 
 // creating the bookmodel//
 const bookModel = mongoose.model("books" , bookSchema);
+
+/*mongoose.model():
+This function is used to create a model in Mongoose. A model represents a MongoDB collection and provides an interface for interacting with documents in that collection*/
+
+/*reates a model named BookModel that represents the Books collection in MongoDB.
+Binds the bookSchema to this model, meaning any document created, retrieved, or manipulated using BookModel must adhere to the structure defined in the schema.*/
+
+//can now be used to interact with the Books collection, allowing to create, read, update, or delete documents.//
+
+
+
+// exporting //
+module.exports= bookModel;
+
+
