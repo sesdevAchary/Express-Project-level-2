@@ -20,9 +20,17 @@ res.send(singleBook);
     res.status(400).send(error.message)
 }
 
-
-
 }
 
 
 //  GETTING ALL THE BOOKS...........................................................................................//
+
+const getAllBooks = async(req,res)=>{
+    try{
+        const everyBook = await bookModel.find();
+        res.send(everyBook);
+    } catch(error){
+        res.send(error.message);
+    }
+
+}
