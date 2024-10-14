@@ -46,5 +46,12 @@ const getAllBooks = async(req,res)=>{
 exports.getBookById = async(req,res)=>{
     try{
         const bookById = await bookModel.findById(req.params.id)
+        if(!bookById) return res.status(404).send(`book not found `)
+            else{
+             res.send(bookById);
+        }
+
+        }catch (error){
+            res.status(400).send(error.message)
     }
 }
