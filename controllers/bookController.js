@@ -34,3 +34,17 @@ const getAllBooks = async(req,res)=>{
     }
 
 }
+
+
+
+
+
+// GET A BOOK BY ID ...................................................................................................//
+
+
+
+exports.getBookById = async(req,res)=>{
+    try{
+        const bookById = await bookModel.findById(req.params.id)
+    }
+}
