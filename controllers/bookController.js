@@ -64,6 +64,12 @@ exports.getBookById = async(req,res)=>{
 
 exports.updateBookById = async(req,res)=>{
     try{
-        const updateBook=await findByIdAndUpdate 
+        const updateBook=await bookModel.findByIdAndUpdate(req.params.id,{ title:req.body.title,auhtor:req.body.author},{new:true});
+        if(!updateBook) return res.status(400).send(`book cant be updated`)
+         else{
+        res.send(updateBook);
+        }
+    } catch(error){
+        res.send(error.message)
     }
-}
+};
