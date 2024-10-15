@@ -73,3 +73,21 @@ exports.updateBookById = async(req,res)=>{
         res.send(error.message)
     }
 };
+
+
+
+
+
+// DELETE A BOOK BY ID ...................................................................................................//
+
+exports.deleteBookById = async(req,res)=>{
+    try{
+        const deleteBook = await bookModel.findByIdAndDelete(req.params.id);
+        if(!deleteBook) res.status(404).send(`book not found`)
+            else{
+            res.send(deleteBook)
+        }
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+};
