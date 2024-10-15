@@ -55,3 +55,15 @@ exports.getBookById = async(req,res)=>{
             res.status(400).send(error.message)
     }
 }
+
+
+
+
+// UPDATE A BOOK BY ID ...................................................................................................//
+
+
+exports.updateBookById = async(req,res)=>{
+    try{
+        const updateBook=await findByIdAndUpdate 
+    }
+}
