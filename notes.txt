@@ -1,3 +1,5 @@
 -> created a server file using npm init -y and installed express
 -> To intigrate a db , created a config and db.js file , instlled mongoose "npm install mongoose"
 -> Created a Bookmodel file for schema 
+-> created bookcontroller fro the main code to be written in CRUD operation ..
+-> created bookroutes for handling router path
