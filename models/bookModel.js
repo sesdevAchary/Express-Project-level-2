@@ -5,7 +5,7 @@
 import mongoose from 'mongoose'
 
 const  bookSchema = new mongoose.Schema({
-/*The bookSchema is an object that defines the structure of documents in the Books collection.*/
+/*The bookSchema is an object that defines the shape and structure of documents in the Books collection.*/
     title:{
         type: String,
         require: true,
