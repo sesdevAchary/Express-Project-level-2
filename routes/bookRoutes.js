@@ -7,3 +7,5 @@ router.get('/books' , bookController.getAllBooks);
 router.get('/books/:id' , bookController.getBookById);
 router.put('/books/:id' , bookController.updateBookById);
 router.delete('/books/:id' , bookController.deleteBookById);
+
+module.exports = router ;

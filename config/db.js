@@ -1,6 +1,6 @@
 // Integrating a Database//
 
-// yet we've built an in-memory array but from now on ww need a dataBase to store data persistently..//
+// yet we've built an in-memory array but from now on we need a dataBase to store data persistently..//
 
 /* MongoDB is an excellent choice for several reasons. It’s flexible, scalable, and works well with JavaScript and Node.js. Plus, its document-oriented nature makes it a good fit for JSON data.*/
 
