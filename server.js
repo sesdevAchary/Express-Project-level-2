@@ -14,3 +14,5 @@ const app = express();
 
 
   // to run the program  use  "node server.js" //
+
+  // This flow is  - model → controller → router → server
