@@ -1,4 +1,4 @@
-const bookModel = require('../models/bookModel')
+import bookModel from '../models/bookModel'
 
 
 // CREATING A BOOK ....................................................//

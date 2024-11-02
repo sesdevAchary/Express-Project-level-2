@@ -31,6 +31,6 @@ Binds the bookSchema to this model, meaning any document created, retrieved, or 
 
 
 // exporting //
-module.exports= bookModel;
+export default bookModel;
 
 
